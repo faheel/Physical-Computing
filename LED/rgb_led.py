@@ -17,9 +17,7 @@ colours = {	  # (r, g, b)
 }
 
 def print_available_colours():
-	for key in colours.keys():
-		print(key, end=", ")
-	print("\b\b ")      # erase the trailing comma
+	', '.join(colours.keys())
 
 
 # invert on/off values if LED is common-anode type
